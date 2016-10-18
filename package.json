@@ -1,0 +1,19 @@
+{
+  "name": "gae-flex-spike",
+  "version": "1.0.0",
+  "description": "Google App Engine Flex env spike",
+  "main": "application.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oshalygin/gae-flex-spike.git"
+  },
+  "author": "oshalygin@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oshalygin/gae-flex-spike/issues"
+  },
+  "homepage": "https://github.com/oshalygin/gae-flex-spike#readme"
+}
