@@ -6,8 +6,6 @@ import colors from "colors"; //eslint-disable-line no-unused-vars
 const port = process.env.PORT || 9999; //eslint-disable-line no-process-env
 let application = express();
 
-
-
 application.get("*", (request, response) => {
     response.status(200).json({
         name: "gae-flex-spike",
