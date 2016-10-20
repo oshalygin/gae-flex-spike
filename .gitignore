@@ -7,3 +7,7 @@ logs/
 *.iml
 .idea/
 .nyc_output
+
+.vscode/chrome
+.DS_Store
+configurationKeys.js

@@ -7,7 +7,7 @@ import {
     STORMPATH_APPLICATION_HREF,
     STORMPATH_CLIENT_APIKEY_ID,
     STORMPATH_CLIENT_APIKEY_SECRET
-} from "/utilities/configurationKeys";
+} from "./utilities/configurationKeys";
 
 
 const port = process.env.PORT || 9999; //eslint-disable-line no-process-env
