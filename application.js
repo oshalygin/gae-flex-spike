@@ -24,7 +24,11 @@ application.use(stormpath.init(application, {
     website: true
 }));
 
-application.get("*", (request, response) => {
+application.get("/", stormpath.loginRequired, (request, response) => {
+    response.send(`Greetings, ${request.user.givenName}`);
+});
+
+application.get("/api/", (request, response) => {
     response.status(200).json({
         name: "gae-flex-spike",
         version: 1.0,
@@ -33,12 +37,12 @@ application.get("*", (request, response) => {
 });
 
 application.on("stormpath.ready", () => {
-
     application.listen(port, (error) => {
         if (!!error) {
             console.log(error.bold.red);
         }
         console.log(`Application running on http://localhost:${port}`.green);
     });
-
 });
+
+export default application;
